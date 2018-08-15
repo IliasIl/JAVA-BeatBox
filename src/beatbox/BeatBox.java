@@ -56,7 +56,7 @@ new BeatBox().buildGUI();
         BorderLayout layout= new BorderLayout();
         background=new JPanel(layout);
         background.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
-         background.setBackground(Color.YELLOW);
+        background.setBackground(Color.lightGray);
         checkboxList= new ArrayList<JCheckBox>();
         Box buttonBox= new Box(BoxLayout.Y_AXIS);
         //buttonBox.setBackground(Color.BLACK);
@@ -92,7 +92,7 @@ new BeatBox().buildGUI();
         
         mainPanel=new JPanel(grid);
         background.add(BorderLayout.CENTER, mainPanel);
-        mainPanel.setBackground(Color.red);
+        mainPanel.setBackground(Color.BLACK);
         for (int i=0; i<256; i++){
             c=new JCheckBox();
             c.setSelected(false);
